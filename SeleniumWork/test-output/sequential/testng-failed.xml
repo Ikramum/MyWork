@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [sequential]" parallel="classes">
+  <test thread-count="2" name="sequentialTest(failed)" parallel="classes">
+    <classes>
+      <class name="wdMethods.TestCase1_CreateContactSe">
+        <methods>
+          <include name="createContactTest"/>
+          <include name="login"/>
+          <include name="closeWindow"/>
+        </methods>
+      </class> <!-- wdMethods.TestCase1_CreateContactSe -->
+      <class name="wdMethods.CreateLead">
+        <methods>
+          <include name="createLead"/>
+          <include name="login"/>
+          <include name="closeWindow"/>
+        </methods>
+      </class> <!-- wdMethods.CreateLead -->
+    </classes>
+  </test> <!-- sequentialTest(failed) -->
+</suite> <!-- Failed suite [sequential] -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sequential" parallel="classes" thread-count="2">
+  <test name="sequentialTest">
+    <classes>
+      <class name="wdMethods.TestCase1_CreateContactSe"/>
+      <!-- <class name="wdMethods.FlipkartSe"/> -->  <!-- disabled case -->
+      <class name="wdMethods.CreateLead"/>
+    </classes>
+  </test> <!-- sequentialTest -->
+</suite> <!-- sequential -->
